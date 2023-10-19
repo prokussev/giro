@@ -1,0 +1,231 @@
+@media (max-width: 1500px) {
+    .brandsLineText {
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 1250px) {
+    .container {
+        max-width: 992px;
+    }
+
+    .brandsLineText {
+        font-size: 32px;
+    }
+
+    .brands {
+        height: 154px;
+    }
+
+    .useful-information-card {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .cardBlocks {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .consultantList {
+        flex-wrap: wrap;
+        justify-content: start  ;
+        gap: 15px;
+    }
+
+    .right-column-footer {
+        gap: 30px
+    }
+
+}
+
+@media(max-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .left-column-footer {
+        height: 50%;
+        width: 90%;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        gap:10px
+    }
+
+    .left-column-footer-padding2{
+        padding-top:0;
+    }
+
+    .right-column-footer {
+        justify-content: space-between;
+    }
+    .formItems{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .buttonSurbsribe{
+        width: 90%;
+        justify-content: space-between;
+        
+    }
+    .formSurbscribeText{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .formButton,
+    .formButton2 {
+    width: 190px;
+    height: 47px;
+}
+}
+@media(max-width: 915px) {
+    .brandsLineText {
+        font-size: 25px;
+    }
+    .listFeaturesItem{
+        width: 50%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        gap: 15px;
+    }
+    .menu-link{
+        font-size: 12px;
+    }
+}
+@media(max-width: 845px) {
+    .container{
+        max-width: 768px;
+    }
+    .brandsLineText {
+        font-size: 25px;
+    }
+    .listFeaturesItem{
+        width: fit-content;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        gap: 15px;
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    .nav{
+        justify-content: space-between;
+    }
+    .menu-item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .menu{
+        position: absolute;
+        right: 10%;
+        top: 50px;
+        padding: 20px;
+        margin-left: 20px;
+        flex-direction: column;
+        background: #FFA019;
+        z-index: 9;
+        border-radius: 10px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(20%);
+        transition: opacity 0.5s, transform 0.5s;
+    }
+    .m-menu{
+        display: block;
+        background-color: transparent;
+        bottom: none;
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .is-open{
+        opacity: 1;
+        visibility: visible;
+        z-index: 9;
+        width: fit-content;
+    }
+    .menu-link{
+        color: #fff;    
+        font-weight: 400;
+    }
+    .footer-content{
+        padding: 50px 0px;
+    }
+    .styleFont1{
+        font-size: 28px;
+    }
+    .styleFont2{
+        font-size: 15px;
+    }
+    .brands{
+        height: 120px;
+    }
+    .brandsLineText {
+        font-size: 20px;
+    }
+    .buttonSurbsribe{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .formSurbscribeText{
+        font-size: 14px;
+        text-align: center;
+    }
+    .catalogAlignItems{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        width: fit-content;
+    }
+    .catalogListBlock {
+        width: 50%;
+        justify-content: space-between;
+    }
+    .cardBlocks{
+        margin-top: 45px;
+    }
+    .form{
+        margin-bottom: 50px;
+    }
+    .aboutAs{
+        margin-bottom: 50px;
+    }
+    .Advantages{
+        margin: 50px auto;
+    }
+    .sliderAndText{
+        margin-bottom: 50px;
+    }
+    .GroupAdvantages{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .GroupAdvantagesContent p {
+        gap:10px;
+        font-size: 15px;
+    }
+
+
+}

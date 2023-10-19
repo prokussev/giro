@@ -5,6 +5,10 @@
     font-family: Segoe UI;
 }
 
+.none {
+    display: none
+}
+
 body {
     background: #fff;
 }
@@ -12,10 +16,12 @@ body {
 .container {
     max-width: 1200px;
     margin: auto;
+    width: 90%;
 }
 
-header {
-    height: 62px;
+.header {
+    position: relative;
+    background: #FFF;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.20);
 }
 
@@ -52,6 +58,11 @@ header button:hover {
     cursor: pointer;
 }
 
+.navigation {
+    background-color: #FFF;
+    height: 62px;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -60,8 +71,10 @@ header button:hover {
 }
 
 .menu {
+    width: 70%;
     list-style-type: none;
     display: flex;
+    justify-content: space-between;
 }
 
 .menu-link {
@@ -76,13 +89,11 @@ header button:hover {
     font-weight: 700;
 }
 
-.menu-item {
-    padding-left: 40px;
-}
 
 .giroBG {
     min-height: 100vh;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.60) 1%, rgba(0, 0, 0, 0.60) 1%), url(../img/bg.png) no-repeat center top / cover;
+    overflow: hidden;
 }
 
 .contentImgLogo {
@@ -148,13 +159,11 @@ header button:hover {
     display: flex;
     font-size: 20px;
     color: #000;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .GroupAdvantagesContent {
-    align-items: center;
     text-align: center;
-    padding-right: 79px;
 }
 
 .GroupAdvantagesContent:last-child {
@@ -181,8 +190,6 @@ header button:hover {
 }
 
 .aboutAs {
-    text-align: left;
-    width: fit-content;
     margin-bottom: 100px;
 }
 
@@ -200,7 +207,7 @@ header button:hover {
 }
 
 .formSurbscribeText {
-    max-width: 275px;
+    width: 275px;
     color: #fff;
     font-size: 18px;
     font-weight: 600;
@@ -274,12 +281,15 @@ header button:hover {
 .features p {
     text-align: justify;
 }
+.features-item{
+    display: flex;
+    flex-direction: column;
+}
 
 .listFeaturesItem {
     display: flex;
-
-    justify-content: flex-start;
-    gap: 100px;
+    justify-content: space-between;
+    width: 80%;
     margin-top: 60px;
     margin-bottom: 30px;
 }
@@ -297,8 +307,8 @@ header button:hover {
     padding-top: 50px;
     background: #fbfbfb;
     margin-top: 50px;
-    max-height: 551px;
     padding-bottom: 50px;
+    gap: 30px;
 }
 
 .catalogAlignItems {
@@ -440,6 +450,9 @@ header button:hover {
 }
 
 .brands {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 194px;
     background: #FBFBFB;
     max-width: 100%;
@@ -447,12 +460,13 @@ header button:hover {
 }
 
 .brandsLine {
-    display: grid;
+    display: flex;
     align-items: center;
     height: 194px;
 }
 
 .brandsLineUl {
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -478,7 +492,7 @@ header button:hover {
 .useful-information-card {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 20px;
 }
 
 .useful-information h1 {
@@ -521,11 +535,12 @@ header button:hover {
     height: 184px;
 }
 
-.left-column-footer:last-child {
+.left-column-footer .footer-text1:last-child {
     padding-top: 60px;
 }
 
 .right-column-footer {
+    height: 50%;
     gap: 44px;
     display: flex;
     justify-content: space-between;
@@ -545,7 +560,21 @@ header button:hover {
     font-weight: 400;
 }
 
+.left-column-footer-padding1 {
+    padding-top: 10px;
+}
+
+.left-column-footer-padding2 {
+    padding-top: 60px;
+}
+
 .footer-text2 a {
     text-decoration: none;
     color: #8191A6;
+}
+
+.right-column-footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
 }

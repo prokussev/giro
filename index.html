@@ -6,61 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гироскутер</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
-    <div class="firstScreen">
-        <header>
-            <div>
+    <div class="firstScreen giroBG">
+        <header class="header">
+            <div class="container">
                 <span class="headerText">Мы всегда рады помочь по телефону +7 923 398 9013 </span>
                 <a href="#">
-                    <button>
+                    <button class="headerButtonText1">
                         <span class="headerButtonText">ЗАКАЗАТЬ ЗВОНОК</span>
                     </button>
                 </a>
             </div>
         </header>
-        <nav class="nav container">
-            <span class="menuTextLogo">My-Giro</span>
-            <ul class="menu">
-                <li class="menu-item">
-                    <a href="#top" class="menu-link">ПРЕИМУЩЕСТВА</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#top2" class="menu-link">О НАС</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#top3" class="menu-link">ОСОБЕННОСТИ</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#top4" class="menu-link">КАТАЛОГ</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#top5" class="menu-link">КОМАНДА</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#top6" class="menu-link">БРЕНДЫ</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#top7" class="menu-link">ПОЛЕЗНОЕ</a>
-                </li>
-            </ul>
+        <nav class="navigation">
+            <div class="container nav ">
+                <span class="menuTextLogo">My-Giro</span>
+                    <button class="m-menu none"><svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 1H15" stroke="black"/>
+                        <path d="M0 6H15" stroke="black"/>
+                        <path d="M0 11H15" stroke="black"/>
+                        </svg>
+                    </button>
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="#top" class="menu-link">ПРЕИМУЩЕСТВА</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#top2" class="menu-link">О НАС</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#top3" class="menu-link">ОСОБЕННОСТИ</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#top4" class="menu-link">КАТАЛОГ</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#top5" class="menu-link">КОМАНДА</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#top6" class="menu-link">БРЕНДЫ</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#top7" class="menu-link">ПОЛЕЗНОЕ</a>
+                        </li>
+                    </ul>
+            </div>
+            
         </nav>
-        <div class="contentImgLogo">
-            <span class="contentLogo1">
-                My-Giro
-            </span>
-            <span class="contentLogo2">
-                Крупнейший интернет-магазин гироскутеров, сигвеев и электросамокатов
-                от известных мировых производителей
-            </span>
-            <a href="#top3">
-                <button>
-                    <span class="contentButtonText" >В КАТАЛОГ</span>
-                </button>
-            </a>
-        </div>
-        <div class="giroBG"></div>
+            <div class="contentImgLogo">
+                <span class="contentLogo1">
+                    My-Giro
+                </span>
+                <span class="contentLogo2">
+                    Крупнейший интернет-магазин гироскутеров, сигвеев и электросамокатов
+                    от известных мировых производителей
+                </span>
+                <a href="#top4">
+                    <button>
+                        <span class="contentButtonText" >В КАТАЛОГ</span>
+                    </button>
+                </a>
+            </div>
     </div>
     <div class="Advantages container">
         <div class="sliderAndText">
@@ -86,7 +95,7 @@
         </content>
     </div>
     <div class="aboutAs container">
-        <h1 class="styleFont1" id="top2">О нас</h1>
+        <h1 class="styleFont1" id="top2" >О нас</h1>
         <p class="styleFont2 aboutAsMargin">В нашем интернет-магазине предоставлен большой выбор гироскутеров, сигвеев и
             электросамокатов от известных мировых
             производителей.
@@ -117,7 +126,7 @@
         </div>
     </div>
     <div class="features">
-        <div class="container">
+        <div class="container features-item">
             <h1 class="styleFont1" id="top3">
                 Особенности гироскутеров
             </h1>
@@ -244,7 +253,6 @@
         </div>
     </div>
     <div class="brands" id="top6">
-        <div class=" brandsLine">
             <ul class="brandsLineText brandsLineUl">
                 <li>XIAOMI</li>
                 <li>SMART</li>
@@ -254,7 +262,6 @@
                 <li>SUBOR</li>
                 <li>AIRWHEEL</li>
             </ul>
-        </div>
     </div>
     <div class="useful-information container">
 
@@ -302,31 +309,31 @@
                     В нашем интернет-магазине представлен большой выбор гироскутеров, сигвеев и электросамокатов от
                     известных производителей.
                 </p>
-                <p class="footer-text2" style="padding-top: 10px;">Все товары, представленные на нашем сайте, отбраны
+                <p class="footer-text2 left-column-footer-padding1" >Все товары, представленные на нашем сайте, отбраны
                     лучими специалистами в этой области.</p>
-                <p class="footer-text2" style="padding-top: 60px;">
+                <p class="footer-text2 left-column-footer-padding2">
                     Copyright © 2020 My-Giro
                 </p>
             </div>
             <div class="right-column-footer">
-                <div>
-                    <p class="footer-text1" style="padding-bottom: 20px;">КОМПАНИЯ MY-GIRO</p>
+                <div class="right-column-footer-item">
+                    <p class="footer-text1">КОМПАНИЯ MY-GIRO</p>
                     <p class="footer-text2">
                         <a href="#top2">О нас</a>
                         <a href="#top">Наши преимущества</a>
                         <a href="#top5">Наши консультанты</a>
                     </p>
                 </div>
-                <div>
-                    <p class="footer-text1 " style="padding-bottom: 20px;">ПОКУПАТЕЛЯМ</p>
+                <div class="right-column-footer-item">
+                    <p class="footer-text1 ">ПОКУПАТЕЛЯМ</p>
                     <p class="footer-text2">
                         <a href="#top4  ">Каталог</a>
                         <a href="#top6">Бренды</a>
                         <a href="#top7">Полезная информация</a>
                     </p>
                 </div>
-                <div>
-                    <p class="footer-text1" style="padding-bottom: 20px;">ПОМОЩЬ</p>
+                <div class="right-column-footer-item">
+                    <p class="footer-text1">ПОМОЩЬ</p>
                     <p class="footer-text2">
                         <a href="">Как оформить заказ</a>
                         <a href="">Способы оплаты</a>
@@ -336,6 +343,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/scripts.js"></script>
 </body>
 
 </html>
